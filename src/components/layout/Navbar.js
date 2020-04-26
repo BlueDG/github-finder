@@ -1,6 +1,7 @@
 import React from 'react';
 // impt tab shortcut for proptypes
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 export const Navbar = ({ icon, title }) => {
   return (
@@ -8,6 +9,14 @@ export const Navbar = ({ icon, title }) => {
       <h1>
         <i className={icon} /> {title}
       </h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
     </nav>
   );
 };
