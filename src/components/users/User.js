@@ -43,7 +43,7 @@ const User = ({ match }) => {
       {hireable ? (
         <i className="fas fa-check text-success" />
       ) : (
-        <i className="fas fa-times-cercle text-danger" />
+        <i className="fas fa-ban text-danger" />
       )}
       <div className="card grid-2">
         <div className="all-center">
